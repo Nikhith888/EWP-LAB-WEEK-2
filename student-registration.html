@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Student Registration</title>
+  </head>
+  <body>
+    <center>
+      <h1>Student Registration Form</h1>
+
+      <form>
+        <label>Full Name:</label><br />
+        <input type="text" name="fullname" required />
+        <br /><br />
+
+        <label>Email:</label><br />
+        <input type="email" name="email" required />
+        <br /><br />
+
+        <label>Phone Number:</label><br />
+        <input
+          type="tel"
+          name="phone"
+          pattern="[0-9]{10}"
+          placeholder="Enter 10-digit number"
+          required
+        />
+        <br /><br />
+
+        <label>Date of Birth:</label><br />
+        <input type="date" name="dob" required />
+        <br /><br />
+
+        <label>Gender:</label><br />
+        <input type="radio" name="gender" value="male" required /> Male
+        <input type="radio" name="gender" value="female" /> Female
+        <input type="radio" name="gender" value="other" /> Other <br /><br />
+
+        <label>Course:</label><br />
+        <select name="course" required>
+          <option value="">--Select Course--</option>
+          <option value="aiml">
+            Artificial Intelligence & Machine Learning
+          </option>
+          <option value="cse">Computer Science Engineering</option>
+          <option value="ece">Electronics & Communication Engineering</option>
+        </select>
+        <br /><br />
+
+        <label>Password:</label><br />
+        <input type="password" name="password" minlength="8" required />
+        <br /><br />
+
+        <label>Address:</label><br />
+        <textarea name="address" rows="4" cols="30" required></textarea>
+        <br /><br />
+
+        <input type="checkbox" required />
+        I agree to the terms and conditions
+        <br /><br />
+
+        <input type="submit" value="Register" />
+        <input type="reset" value="Clear" />
+      </form>
+    </center>
+  </body>
+</html>
